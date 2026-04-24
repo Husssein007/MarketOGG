@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OGG - Mon panier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-checkout">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="site-nav">
+          <a class="brand" href="marketplace.html">O.G.G</a>
+          <div class="nav-links">
+            <a href="marketplace.html">Accueil</a>
+            <a href="services.html">A Propos</a>
+            <a href="#">Fonctionnement</a>
+            <a href="#">Tarifs</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="#">Se connecter</a>
+            <a class="btn btn-dark" href="#">Creer une annonce</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main checkout-main">
+        <div class="checkout-progress">
+          <div class="progress-step active">1</div>
+          <div class="progress-line"></div>
+          <div class="progress-step current">2</div>
+          <div class="progress-line"></div>
+          <div class="progress-step">3</div>
+        </div>
+
+        <section class="checkout-section">
+          <article class="checkout-card">
+            <h1>Mon panier</h1>
+
+            <div class="vendor-head">
+              <div class="vendor-identity">
+                <div class="vendor-logo"></div>
+                <div>
+                  <h2>La Ferme d'Emilie</h2>
+                  <p>Biscuiterie artisanale - De la graine au sable depuis 2012</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-line-card selected">
+              <div class="cart-line-media media-biscuits"></div>
+              <div class="cart-line-copy">
+                <div class="cart-line-tags">
+                  <span>Produit artisanal</span>
+                  <span>Bio</span>
+                </div>
+                <h3>Biscuits artisanaux</h3>
+                <p>Biscuits</p>
+                <small>Format : Des 300g</small>
+                <div class="qty-control">
+                  <button type="button">+</button>
+                  <span>2</span>
+                  <button type="button">+</button>
+                </div>
+              </div>
+              <strong class="cart-line-price">37.80 CHF</strong>
+            </div>
+
+            <h2 class="section-title">Livraison - Choisir le mode</h2>
+            <div class="option-stack">
+              <label class="choice-card selected">
+                <input type="radio" checked />
+                <div>
+                  <strong>Retrait sur place</strong>
+                  <p>Sur rendez-vous a la ferme d'Emilie (Fribourg)</p>
+                  <small>Disponible sous 2 a 3 jours</small>
+                </div>
+                <span class="choice-price success">Gratuit</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" />
+                <div>
+                  <strong>Livraison par la poste</strong>
+                  <p>PostPac Priority - Livraison en 2 a 4 jours ouvrables</p>
+                </div>
+                <span class="choice-price">6.90 CHF</span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" />
+                <div>
+                  <strong>Livraison directe</strong>
+                  <p>Livraison assuree par le producteur - Rayon de 30 km</p>
+                  <small>Sous 5 jours</small>
+                </div>
+                <span class="choice-price">12.00 CHF</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="checkout-card">
+            <div class="vendor-head">
+              <div class="vendor-identity">
+                <div class="vendor-logo"></div>
+                <div>
+                  <h2>Ferme des Collines</h2>
+                  <p>Ferme agricole - Production locale et savoir-faire depuis 2012</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-line-card selected">
+              <div class="cart-line-media media-eggs"></div>
+              <div class="cart-line-copy">
+                <div class="cart-line-tags">
+                  <span>Produit artisanal</span>
+                  <span>Bio</span>
+                </div>
+                <h3>Oeufs fermiers</h3>
+                <p>Oeufs</p>
+                <small>Format : Des 53 g</small>
+                <div class="qty-control">
+                  <button type="button">+</button>
+                  <span>2</span>
+                  <button type="button">+</button>
+                </div>
+              </div>
+              <strong class="cart-line-price">6.60 CHF</strong>
+            </div>
+
+            <div class="soft-alert warning">
+              <strong>Consigne emballage verre : 3.00 CHF</strong>
+              <p>
+                2 bouteilles x 1.50 CHF - recuperable lors du prochain retrait
+                ou de la prochaine livraison.
+              </p>
+            </div>
+
+            <h2 class="section-title">Livraison - Choisir le mode</h2>
+            <div class="option-stack">
+              <label class="choice-card">
+                <input type="radio" />
+                <div>
+                  <strong>Retrait sur place</strong>
+                  <p>Sur rendez-vous a la ferme des collines (Vaud)</p>
+                  <small>Disponible sous 2 a 3 jours</small>
+                </div>
+                <span class="choice-price success">Gratuit</span>
+              </label>
+              <label class="choice-card selected violet">
+                <input type="radio" checked />
+                <div>
+                  <strong>Livraison par la poste</strong>
+                  <p>PostPac Economy - Livraison en 3 a 5 jours ouvrables</p>
+                </div>
+                <span class="choice-price">9.90 CHF</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="checkout-card summary-card">
+            <h2>Resume de la commande</h2>
+
+            <div class="summary-lines">
+              <div><span>Biscuits artisanaux (x2)</span><strong>37.80 CHF</strong></div>
+              <div><span>Oeufs fermiers (x2)</span><strong>6.60 CHF</strong></div>
+              <div><span>Consigne verre (x2)</span><strong>3.00 CHF</strong></div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-lines">
+              <div><span>Livraison ferme d'Emilie</span><strong>Gratuit</strong></div>
+              <div><span>Livraison ferme des collines</span><strong>9.90 CHF</strong></div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <div>
+                <strong>Total</strong>
+                <span>TVA incluse - 2 commandes separees</span>
+              </div>
+              <strong>57.30 CHF</strong>
+            </div>
+
+            <div class="soft-alert warning">
+              <strong>Paiement en deux fois requis</strong>
+              <p>
+                Le Moulin des Alpes SA propose des modes de paiement differents.
+                Vous reglerez chaque fournisseur separement a l'etape suivante.
+              </p>
+            </div>
+
+            <div class="summary-cta">
+              <a class="btn btn-primary" href="paiement-fournisseurs.html">
+                Continuer vers le paiement
+              </a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

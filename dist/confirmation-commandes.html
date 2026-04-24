@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OGG - Commandes confirmees</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-checkout">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="site-nav">
+          <a class="brand" href="marketplace.html">O.G.G</a>
+          <div class="nav-links">
+            <a href="marketplace.html">Accueil</a>
+            <a href="services.html">A Propos</a>
+            <a href="#">Fonctionnement</a>
+            <a href="#">Tarifs</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="#">Se connecter</a>
+            <a class="btn btn-dark" href="#">Creer une annonce</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main checkout-main">
+        <div class="checkout-progress">
+          <div class="progress-step">1</div>
+          <div class="progress-line"></div>
+          <div class="progress-step current">2</div>
+          <div class="progress-line"></div>
+          <div class="progress-step">3</div>
+        </div>
+
+        <section class="checkout-section">
+          <article class="checkout-card confirmation-hero">
+            <div class="confirmation-badge">✓</div>
+            <h1>Commandes confirmees</h1>
+            <p>2 factures generees automatiquement - 104.20 CHF au total</p>
+          </article>
+
+          <article class="checkout-card">
+            <div class="vendor-pricing-head">
+              <div class="vendor-identity">
+                <div class="vendor-logo"></div>
+                <div>
+                  <h2>La Ferme d'Emilie</h2>
+                  <p>Biscuiterie artisanale - De la graine au sable depuis 2012</p>
+                </div>
+              </div>
+              <span class="status-pill success">Paye - Carte</span>
+            </div>
+
+            <div class="invoice-lines">
+              <div><span>Biscuit artisanaux</span><strong>37.80 CHF</strong></div>
+              <div><span>Livraison - retrait sur place</span><strong>Gratuit</strong></div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total compact">
+              <div><strong>Total a regler</strong></div>
+              <strong>37.80 CHF</strong>
+            </div>
+
+            <div class="soft-alert warning invoice-alert">
+              <div class="invoice-alert-head">
+                <strong>Facture Stripe</strong>
+                <span class="status-pill success soft">Payee - INV-2026-0001</span>
+              </div>
+              <p>Generee automatiquement - envoyee par email</p>
+              <a class="btn btn-secondary invoice-btn" href="#">Telecharger la facture PDF</a>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <h3 class="section-title small">Prochaine etape</h3>
+            <div class="timeline">
+              <div class="timeline-item done">
+                <span></span>
+                <div>
+                  <strong>Commande recue par la ferme</strong>
+                  <p>Confirmation envoyee a Emilie</p>
+                </div>
+              </div>
+              <div class="timeline-item done">
+                <span></span>
+                <div>
+                  <strong>Commande recue par la ferme</strong>
+                  <p>Confirmation envoyee a Emilie</p>
+                </div>
+              </div>
+              <div class="timeline-item current">
+                <span></span>
+                <div>
+                  <strong>Retrait sur place</strong>
+                  <p>Sur rendez-vous - Ferme d'Emilie, Fribourg - sous 2-3 jours</p>
+                </div>
+              </div>
+              <div class="timeline-item muted">
+                <span></span>
+                <div>
+                  <strong>Consigne recuperable</strong>
+                  <p>Sans objet pour cette commande</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="checkout-card">
+            <div class="vendor-pricing-head">
+              <div class="vendor-identity">
+                <div class="vendor-logo"></div>
+                <div>
+                  <h2>La Ferme des collines</h2>
+                  <p>Ferme agricole - Production locale et savoir-faire depuis 2012</p>
+                </div>
+              </div>
+              <span class="status-pill waiting">En attente virement</span>
+            </div>
+
+            <div class="invoice-lines">
+              <div><span>Oeufs fermiers (x2)</span><strong>6.60 CHF</strong></div>
+              <div><span>Consigne verre (x2)</span><strong>3.00 CHF</strong></div>
+              <div><span>Livraison ferme des collines</span><strong>9.90 CHF</strong></div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total compact">
+              <div><strong>Total a regler</strong></div>
+              <strong>19.50 CHF</strong>
+            </div>
+
+            <div class="soft-alert warning invoice-alert">
+              <div class="invoice-alert-head">
+                <strong>Facture Stripe</strong>
+                <span class="status-pill waiting soft">En attente - virement</span>
+              </div>
+              <p>Generee automatiquement - sera marquee "Payee" a reception du virement</p>
+              <a class="btn btn-secondary invoice-btn" href="#">Telecharger la facture PDF</a>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <h3 class="section-title small">Coordonnees bancaires pour le virement</h3>
+            <div class="bank-card">
+              <div><span>Beneficiaire</span><strong>La ferme des collines</strong></div>
+              <div><span>IBAN</span><strong>CH56 0483 5012 3456 7800 9</strong></div>
+              <div><span>Reference</span><strong>CMD-2026-0412-02</strong></div>
+              <div><span>Montant exact</span><strong>66.40 CHF</strong></div>
+            </div>
+
+            <p class="bank-note">
+              La commande sera expediee a reception du virement - delai estime
+              1-2 jours bancaires
+            </p>
+
+            <div class="summary-divider"></div>
+
+            <h3 class="section-title small">Prochaine etape</h3>
+            <div class="timeline">
+              <div class="timeline-item done">
+                <span></span>
+                <div>
+                  <strong>Commande recue par la ferme des collines</strong>
+                  <p>En attente de reception du virement</p>
+                </div>
+              </div>
+              <div class="timeline-item current">
+                <span></span>
+                <div>
+                  <strong>Virement a effectuer</strong>
+                  <p>66.40 CHF - reference CMD-2026-0412-02 - delai 1-2 jours</p>
+                </div>
+              </div>
+              <div class="timeline-item muted">
+                <span></span>
+                <div>
+                  <strong>Expedition PostPac Economy</strong>
+                  <p>Apres confirmation du paiement - 3-5 jours ouvrables</p>
+                </div>
+              </div>
+              <div class="timeline-item muted">
+                <span></span>
+                <div>
+                  <strong>Consigne verre recuperable</strong>
+                  <p>3.00 CHF rembourses sur votre prochain achat - 2 bouteilles</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="checkout-card summary-card">
+            <h2>Recapitulatif global</h2>
+            <div class="summary-lines">
+              <div><span>Ferme d'Emilie - paye</span><strong>37.80 CHF</strong></div>
+              <div><span>Ferme des collines - en attente</span><strong>19.50 CHF</strong></div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <div>
+                <strong>Total commandes</strong>
+                <span>2 factures Stripe - TVA incluse - emails de confirmation envoyes</span>
+              </div>
+              <strong>57.30 CHF</strong>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
