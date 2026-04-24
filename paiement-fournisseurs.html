@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OGG - Paiement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-checkout">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="site-nav">
+          <a class="brand" href="marketplace.html">O.G.G</a>
+          <div class="nav-links">
+            <a href="marketplace.html">Accueil</a>
+            <a href="services.html">A Propos</a>
+            <a href="#">Fonctionnement</a>
+            <a href="#">Tarifs</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="#">Se connecter</a>
+            <a class="btn btn-dark" href="#">Creer une annonce</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main checkout-main">
+        <div class="checkout-progress">
+          <div class="progress-step">1</div>
+          <div class="progress-line"></div>
+          <div class="progress-step current">2</div>
+          <div class="progress-line"></div>
+          <div class="progress-step">3</div>
+        </div>
+
+        <section class="checkout-section">
+          <article class="checkout-card">
+            <h1>Paiement</h1>
+
+            <div class="soft-alert info">
+              <strong>Deux paiements distincts</strong>
+              <p>
+                La ferme d'Emilie et la ferme de collines ne proposent pas les
+                memes modes de paiement. Vous devrez regler chaque fournisseur
+                separement ci-dessous.
+              </p>
+            </div>
+
+            <div class="vendor-pricing-head">
+              <div class="vendor-identity">
+                <div class="vendor-logo"></div>
+                <div>
+                  <h2>La Ferme d'Emilie</h2>
+                  <p>Biscuiterie artisanale - De la graine au sable depuis 2012</p>
+                </div>
+              </div>
+              <strong class="vendor-amount">37.80 CHF</strong>
+            </div>
+
+            <h2 class="section-title">Mode de paiement</h2>
+            <div class="payment-method-list">
+              <label class="payment-method selected">
+                <input type="radio" checked />
+                <div class="payment-icon blue">CB</div>
+                <div class="payment-copy">
+                  <strong>Carte bancaire (Visa/Mastercard)</strong>
+                  <p>Paiement immediat - frais Stripe inclus - blocage possible</p>
+                </div>
+                <span class="method-pill">Via Stripe</span>
+              </label>
+
+              <label class="payment-method">
+                <input type="radio" />
+                <div class="payment-icon sky">TW</div>
+                <div class="payment-copy">
+                  <strong>TWINT</strong>
+                  <p>Paiement mobile - immediat - pas de blocage possible</p>
+                </div>
+                <span class="method-pill">Via Stripe</span>
+              </label>
+
+              <label class="payment-method">
+                <input type="radio" />
+                <div class="payment-icon indigo">P</div>
+                <div class="payment-copy">
+                  <strong>Paiement lors du retrait</strong>
+                  <p>Especes ou carte sur place. facture Stripe generee en attente</p>
+                </div>
+                <span class="method-pill mint">Facture stripe generee</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="checkout-card">
+            <div class="vendor-pricing-head">
+              <div class="vendor-identity">
+                <div class="vendor-logo"></div>
+                <div>
+                  <h2>Ferme des Collines</h2>
+                  <p>Ferme agricole - Production locale et savoir-faire depuis 2012</p>
+                </div>
+              </div>
+              <strong class="vendor-amount">6.60 CHF</strong>
+            </div>
+
+            <div class="soft-alert warning">
+              <strong>Ce fournisseur ne propose pas le paiement par carte.</strong>
+              <p>Modes disponibles : virement bancaire, TWINT, paiement au retrait.</p>
+            </div>
+
+            <h2 class="section-title">Mode de paiement</h2>
+            <div class="payment-method-list">
+              <label class="payment-method disabled">
+                <input type="radio" />
+                <div class="payment-icon blue">CB</div>
+                <div class="payment-copy">
+                  <strong>Carte bancaire (Visa/Mastercard)</strong>
+                  <p>Paiement immediat - frais Stripe inclus - blocage possible</p>
+                </div>
+                <span class="method-pill">Via Stripe</span>
+              </label>
+
+              <label class="payment-method">
+                <input type="radio" />
+                <div class="payment-icon sky">TW</div>
+                <div class="payment-copy">
+                  <strong>TWINT</strong>
+                  <p>Paiement mobile - immediat - pas de blocage possible</p>
+                </div>
+                <span class="method-pill">Via Stripe</span>
+              </label>
+
+              <label class="payment-method">
+                <input type="radio" />
+                <div class="payment-icon green">VB</div>
+                <div class="payment-copy">
+                  <strong>Virement bancaire</strong>
+                  <p>IBAN communique apres validation - delai 1-2 jours - facture Stripe generee</p>
+                </div>
+                <span class="method-pill mint">Facture stripe generee</span>
+              </label>
+
+              <label class="payment-method selected">
+                <input type="radio" checked />
+                <div class="payment-icon indigo">P</div>
+                <div class="payment-copy">
+                  <strong>Paiement lors du retrait</strong>
+                  <p>Especes ou carte sur place. facture Stripe generee en attente</p>
+                </div>
+                <span class="method-pill mint">Facture stripe generee</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="checkout-card summary-card">
+            <h2>Recapitulatif</h2>
+
+            <div class="summary-lines">
+              <div><span>La Ferme d'Emilie</span><strong>37.80 CHF</strong></div>
+              <div><span>La ferme des collines</span><strong>6.60 CHF</strong></div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <div>
+                <strong>Total a regler</strong>
+                <span>TVA incluse - 2 factures separees</span>
+              </div>
+              <strong>57.30 CHF</strong>
+            </div>
+
+            <div class="soft-alert success">
+              <strong>Facturation automatique dans tous les cas</strong>
+              <p>
+                Quel que soit le mode de paiement choisi, une facture Stripe est
+                generee automatiquement pour chaque fournisseur.
+              </p>
+            </div>
+
+            <div class="summary-cta">
+              <a class="btn btn-primary" href="paiement-carte.html">
+                Confirmer et payer - 57.30 CHF
+              </a>
+            </div>
+
+            <p class="checkout-footnote">
+              Paiements securises via Stripe Connect - chaque fournisseur recoit sa part directement
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

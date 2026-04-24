@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OGG Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-marketplace">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="site-nav">
+          <a class="brand" href="marketplace.html">O.G.G</a>
+          <div class="nav-links">
+            <a class="active" href="marketplace.html">Marketplace</a>
+            <a href="services.html">Services</a>
+            <a href="product-detail.html?product=biscuits-artisanaux">Produit vedette</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="services.html">Besoin de logistique ?</a>
+            <a class="btn btn-primary" href="#products">Acheter</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="catalog-section" id="products">
+          <div class="section-intro">
+            <div>
+              <span class="eyebrow eyebrow-dark" id="filters">Marketplace</span>
+              <h2>Produits</h2>
+              <p>
+                Produits uniquement. Pas de blocs services, pas d'encombrement,
+                juste un catalogue clair et des actions produit visibles.
+              </p>
+            </div>
+            <div class="toolbar-chips">
+              <span class="chip chip-dark">35 produits</span>
+              <span class="chip">En stock</span>
+              <span class="chip">Bio Suisse</span>
+            </div>
+          </div>
+
+          <section class="filter-panel">
+            <label class="search-field">
+              <span>Recherche</span>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Rechercher produits, categories, fournisseurs..."
+              />
+            </label>
+
+            <div class="filter-row">
+              <label class="select-field">
+                <span>Categorie</span>
+                <select id="categoryFilter">
+                  <option value="all">Toutes les categories</option>
+                </select>
+              </label>
+              <label class="select-field">
+                <span>Type de produit</span>
+                <select id="typeFilter">
+                  <option value="all">Tous les types</option>
+                </select>
+              </label>
+              <label class="select-field">
+                <span>Disponibilite</span>
+                <select id="availabilityFilter">
+                  <option value="all">Tous les stocks</option>
+                  <option value="in-stock">En stock</option>
+                </select>
+              </label>
+              <label class="toggle-field">
+                <span>Afficher seulement Bio Suisse</span>
+                <input id="bioFilter" type="checkbox" />
+              </label>
+            </div>
+          </section>
+
+          <section class="catalog-toolbar">
+            <div class="catalog-meta">
+              <span id="resultsCount">0 produits</span>
+              <span class="dot-separator"></span>
+              <span>Vue cartes</span>
+            </div>
+            <div class="catalog-sort">
+              <span>Trier par</span>
+              <select id="sortFilter">
+                <option value="default">Selection</option>
+                <option value="price-asc">Prix croissant</option>
+                <option value="price-desc">Prix decroissant</option>
+                <option value="title">Titre</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="product-grid" id="productGrid" aria-live="polite"></section>
+        </section>
+      </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
